@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background{ 
+    height:100vh;
+    width: 100%;
+    overflow:auto;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
+    background-size: 2000% 2000%;
+    animation: change 10s ease-in-out infinite;
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  #avatar{
+     text-align: center; 
+     margin-bottom: 20px;
+     
+  }
+
+  #avatar_img{
+      width: 150px;
+      max-width: calc(100% - 20px);
+      border-radius: 20px;
+      border: 5px white double;
+      margin: 20px;
+      
+  }
+  #avatar_img:hover{
+      cursor: pointer;
+      transform: rotate(360deg);
+      transition: 1.5s;
+      border-radius: 100px;
+  }
+
+  #avatar_name{
+    max-width: calc(100% - 20px);
+      width: 200px;
+      display: block;
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 0 auto;
+  }
+  
+  #avatar_name:hover{
+      cursor: pointer;
+      transition: 2s;
+      letter-spacing: 3px;
+      font-size: 30px;
+      width: 100vw;
+      font-style: oblique;
+      color: black
+      
+  }
+
+  #content{
+      width: 500px;
+      max-width: calc(100% - 20px);
+      margin: 0 auto;
+  }
+
+  #infor li{
+      margin-bottom: 50px;
+      height: 60px;
+      list-style-type: none;
+        
+      
+  }
+
+  #infor a{
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+      text-decoration: none;
+      display: block;
+      line-height: 60px;
+      border: 5px white double;
+      border-radius: 60px;
+      text-align: center;
+      
+      
+      
+  }
+
+  #infor li:hover a{
+      font-size: 30px;
+      cursor: pointer;
+      background: white;
+      color: black;
+      transition: 1s; 
+  }
